@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Andressa Estética Avançada | Fisioterapia e Estética</title>
-<meta name="description" content="Dr. Andressa Estética Avançada — cuidados clínicos em harmonização facial, limpeza de pele, tricologia e drenagem linfática. Atendimento presencial com Dra. Andressa M. Artur.">
+<title>Dr. Andressa Estética Avançada | Fisioterapia e Estética em Limeira/SP</title>
+<meta name="description" content="Dr. Andressa Estética Avançada — clínica de Fisioterapia e Estética em Limeira/SP. Harmonização facial, gerenciamento de pele, tricologia, massagem terapêutica e drenagem linfática. Av. Antônio Ometto, 606, Vila Cláudia, sala 6, consultório 2. WhatsApp (19) 98922-1717.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="keywords" content="Dr. Andressa Estética Avançada, harmonização facial, limpeza de pele, gerenciamento de pele, tricologia, pós-operatório facial, drenagem linfática, fisioterapia estética">
-<link rel="canonical" href="https://drandressaesteticaavancada.verdent.app/">
-<meta property="og:url" content="https://drandressaesteticaavancada.verdent.app/">
+<meta name="keywords" content="Dr. Andressa Estética Avançada, draandressaestetica.com.br, harmonização facial, gerenciamento de pele, tricologia, massagem terapêutica, drenagem linfática, enzimas corporais, fisioterapia estética Limeira, Avenida Antônio Ometto 606, WhatsApp (19) 98922-1717">
+<link rel="canonical" href="https://draandressaestetica.com.br/">
+<meta property="og:url" content="https://draandressaestetica.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dr. Andressa Estética Avançada | Fisioterapia e Estética">
-<meta property="og:description" content="Cuidados clínicos personalizados em harmonização facial, limpeza de pele, tricologia e drenagem linfática.">
-<meta property="og:image" content="https://drandressaesteticaavancada.verdent.app/assets/images/logo-andressa.jpeg">
+<meta property="og:title" content="Dr. Andressa Estética Avançada | Fisioterapia e Estética em Limeira/SP">
+<meta property="og:description" content="Cuidados clínicos personalizados em harmonização facial, gerenciamento de pele, tricologia e cuidado corporal. Av. Antônio Ometto, 606, Limeira/SP — WhatsApp (19) 98922-1717.">
+<meta property="og:image" content="https://draandressaestetica.com.br/assets/images/logo-andressa.jpeg">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dr. Andressa Estética Avançada | Fisioterapia e Estética">
-<meta name="twitter:description" content="Cuidados clínicos personalizados em harmonização facial, limpeza de pele, tricologia e drenagem linfática.">
-<meta name="twitter:image" content="https://drandressaesteticaavancada.verdent.app/assets/images/logo-andressa.jpeg">
+<meta name="twitter:title" content="Dr. Andressa Estética Avançada | Fisioterapia e Estética em Limeira/SP">
+<meta name="twitter:description" content="Cuidados clínicos personalizados em harmonização facial, gerenciamento de pele, tricologia e cuidado corporal. WhatsApp (19) 98922-1717.">
+<meta name="twitter:image" content="https://draandressaestetica.com.br/assets/images/logo-andressa.jpeg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -302,7 +302,7 @@
   }
 
   /* ---------- Problema / Agitação (dor do cliente) ---------- */
-  .problem{ background:var(--cream); }
+  .problem{ background:var(--cream); padding-bottom:48px; }
   .problem-grid{
     display:grid;
     grid-template-columns:1.08fr 0.92fr;
@@ -372,7 +372,7 @@
   .ai-point span{ font-size:14px; color:var(--ink-soft); }
 
   /* ---------- Tratamentos ---------- */
-  .specialties{ background:var(--cream); }
+  .specialties{ background:var(--cream); padding-top:32px; }
   .treatments-intro{ font-size:16.5px; color:var(--ink-soft); margin-bottom:14px; max-width:70ch; }
   .specialties .section-head h2{ margin-top:34px; }
   .treatments-instructions{ font-size:15px; color:var(--ink-soft); margin-top:8px; }
@@ -417,6 +417,23 @@
 
   .spec-card h3{ font-size:22px; margin-bottom:10px; }
   .spec-card p.spec-desc{ color:var(--ink-soft); font-size:15px; }
+
+  .partner-badge{
+    display:flex; align-items:center; gap:12px;
+    margin-top:18px;
+    padding:10px 14px;
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:14px;
+  }
+  .partner-badge img{
+    width:44px; height:44px; flex:none;
+    border-radius:10px;
+    object-fit:cover;
+    border:1px solid var(--line);
+  }
+  .partner-badge span{ font-size:12.5px; color:var(--ink-soft); line-height:1.4; }
+  .partner-badge strong{ color:var(--ink); }
 
   .spec-toggle{
     margin-top:22px;
@@ -632,6 +649,133 @@
     .history-float{ font-size:12.5px; padding:11px 22px; margin-top:20px; }
   }
 
+  /* ---------- Elisa: assistente virtual ---------- */
+  .elisa-float{
+    position:fixed;
+    left:24px; bottom:24px;
+    z-index:1200;
+    width:64px; height:64px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-lift);
+    border:none;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .elisa-float:hover{ transform:scale(1.08); }
+  @media (max-width:600px){ .elisa-float{ width:58px; height:58px; left:16px; bottom:16px; } }
+
+  .elisa-panel{
+    position:fixed;
+    left:24px; bottom:100px;
+    z-index:1201;
+    width:340px;
+    max-height:min(520px, 70vh);
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:22px;
+    box-shadow:0 30px 70px -20px rgba(43,38,32,0.35);
+    display:flex; flex-direction:column;
+    overflow:hidden;
+    opacity:0; transform:translateY(16px) scale(.97);
+    pointer-events:none;
+    transition:opacity .28s var(--ease), transform .28s var(--ease);
+  }
+  .elisa-panel.open{ opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+  @media (max-width:600px){
+    .elisa-panel{ left:12px; right:12px; bottom:84px; width:auto; }
+  }
+
+  .elisa-head{
+    display:flex; align-items:center; gap:12px;
+    padding:16px 18px;
+    background:linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color:#3B2E0F;
+  }
+  .elisa-head .avatar{
+    width:38px; height:38px; border-radius:50%; flex:none;
+    background:rgba(255,255,255,0.35);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-weight:700; font-size:16px;
+  }
+  .elisa-head strong{ display:block; font-size:15px; }
+  .elisa-head span{ font-size:11.5px; opacity:.85; }
+  .elisa-close{
+    margin-left:auto; background:none; border:none; color:#3B2E0F;
+    width:28px; height:28px; display:flex; align-items:center; justify-content:center;
+    border-radius:50%; opacity:.75;
+  }
+  .elisa-close:hover{ opacity:1; background:rgba(255,255,255,0.25); }
+
+  .elisa-body{
+    flex:1; overflow-y:auto;
+    padding:16px 16px 8px;
+    display:flex; flex-direction:column; gap:10px;
+    background:var(--cream);
+  }
+  .elisa-msg{
+    max-width:86%;
+    padding:11px 14px;
+    border-radius:14px;
+    font-size:13.5px;
+    line-height:1.5;
+  }
+  .elisa-msg.bot{
+    background:var(--white);
+    border:1px solid var(--line);
+    color:var(--ink);
+    align-self:flex-start;
+    border-bottom-left-radius:4px;
+  }
+  .elisa-msg.user{
+    background:linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color:#3B2E0F;
+    align-self:flex-end;
+    border-bottom-right-radius:4px;
+  }
+  .elisa-quick{
+    display:flex; flex-wrap:wrap; gap:8px;
+    padding:4px 16px 14px;
+    background:var(--cream);
+  }
+  .elisa-chip{
+    background:var(--white);
+    border:1px solid var(--line);
+    color:var(--gold-ink);
+    font-size:12px; font-weight:600;
+    padding:8px 13px;
+    border-radius:999px;
+  }
+  .elisa-chip:hover{ background:var(--gold); color:#3B2E0F; border-color:var(--gold); }
+  .elisa-input-row{
+    display:flex; gap:8px;
+    padding:12px;
+    border-top:1px solid var(--line);
+    background:var(--white);
+  }
+  .elisa-input-row input{
+    flex:1;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:11px 16px;
+    font-family:inherit;
+    font-size:13.5px;
+    background:var(--cream);
+    color:var(--ink);
+  }
+  .elisa-input-row button{
+    width:40px; height:40px; flex:none;
+    border-radius:50%;
+    border:none;
+    background:linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .elisa-disclaimer{
+    font-size:10.5px; color:#9a927f; text-align:center;
+    padding:0 16px 12px;
+    background:var(--cream);
+  }
+
   .sr-only{
     position:absolute; width:1px; height:1px; padding:0; margin:-1px;
     overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
@@ -643,14 +787,17 @@
   "@type": "LocalBusiness",
   "additionalType": "https://schema.org/MedicalBusiness",
   "name": "Dr. Andressa Estética Avançada",
-  "image": "https://drandressaesteticaavancada.verdent.app/assets/images/logo-andressa.jpeg",
-  "description": "Cuidados clínicos em harmonização facial, limpeza de pele, tricologia e drenagem linfática.",
-  "telephone": "+55-19-99149-3433",
-  "url": "https://drandressaesteticaavancada.verdent.app/",
+  "image": "https://draandressaestetica.com.br/assets/images/logo-andressa.jpeg",
+  "description": "Clínica de Fisioterapia e Estética com harmonização facial, gerenciamento de pele, tricologia, massagem terapêutica, drenagem linfática e enzimas corporais.",
+  "telephone": "+55-19-98922-1717",
+  "url": "https://draandressaestetica.com.br/",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "postalCode": "13497-660",
+    "streetAddress": "Avenida Antônio Ometto, 606 — Vila Cláudia, sala 6, consultório 2",
+    "addressLocality": "Limeira",
+    "addressRegion": "SP",
+    "postalCode": "13480-470",
     "addressCountry": "BR"
   },
   "medicalSpecialty": [
@@ -658,7 +805,8 @@
     {"@type": "MedicalSpecialty", "name": "Estética"}
   ],
   "sameAs": [
-    "https://wa.me/5519991493433"
+    "https://wa.me/5519989221717",
+    "https://draandressaestetica.com.br/"
   ]
 }
 </script>
@@ -685,7 +833,7 @@
     </nav>
 
     <div class="header-actions">
-      <a href="https://wa.me/5519991493433?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary btn-sm desktop-only">Agendar consulta</a>
+      <a href="https://wa.me/5519989221717?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary btn-sm desktop-only">Agendar consulta</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span><span></span><span></span>
       </button>
@@ -776,7 +924,7 @@
 
       <div class="problem-bridge">
         <strong>Isso não precisa continuar assim!</strong>
-        Existe um cuidado clínico específico para cada uma dessas situações — e ele começa com um diagnóstico de verdade, não com mais um produto na estante do banheiro.
+        Existe um cuidado clínico específico para cada uma dessas situações — e ele começa com um diagnóstico de verdade.
       </div>
     </div>
 
@@ -799,11 +947,11 @@
 <section class="specialties" id="especialidades">
   <div class="container">
     <div class="section-head">
-      <p class="treatments-intro">Cuidar da sua aparência também é uma forma de cuidar de você. Você cuida da pele, dos cabelos, do corpo… mas sente que ainda falta um cuidado mais completo, personalizado e pensado para as suas necessidades?</p>
+      <p class="treatments-intro">Cuidar da sua aparência também é uma forma de cuidar de você.<br>Você cuida da pele, dos cabelos, do corpo… mas sente que ainda falta um cuidado mais completo, personalizado e pensado para as suas necessidades?</p>
       <p class="treatments-intro">Na Dr. Andressa Estética Avançada, unimos conhecimento, tecnologia e técnicas modernas para oferecer uma experiência de cuidado que valoriza a sua beleza de forma natural, elegante e individualizada.</p>
       <p class="treatments-intro">Uma clínica de Fisioterapia e Estética, criada para quem busca mais do que procedimentos: busca cuidado, bem-estar, saúde e uma aparência bonita e bem cuidada em todas as fases da vida.</p>
       <h2>✨ Nossos tratamentos</h2>
-      <p class="treatments-instructions">Toque no card para ver os tratamentos incluídos em cada cuidado.</p>
+      <p class="treatments-instructions">Toque no card para ver os tratamentos.</p>
     </div>
 
     <!-- FACIAL -->
@@ -815,7 +963,7 @@
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21C16 21 19 17.5 19 13C19 8.5 15.5 3 12 3C8.5 3 5 8.5 5 13C5 17.5 8 21 12 21Z" stroke="#8A6E2F" stroke-width="1.6"/><path d="M9 13C9 13 10 14.5 12 14.5C14 14.5 15 13 15 13" stroke="#8A6E2F" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
           <h3>Harmonização Facial</h3>
-          <p class="spec-desc">Marcas de expressão e um rosto que já não reflete como você se sente por dentro? Procedimentos precisos devolvem equilíbrio e naturalidade, sem exageros.</p>
+          <p class="spec-desc">Procedimentos voltados à estética e ao equilíbrio facial, devolvendo naturalidade sem exageros.</p>
 
           <button class="spec-toggle" data-target="listHarmonizacao" aria-expanded="false">
             Ver tratamentos
@@ -825,35 +973,11 @@
           <div class="spec-list" id="listHarmonizacao">
             <div class="spec-list-inner">
               <ul>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Toxina botulínica (botox)</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Preenchimento labial</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Toxina botulínica</li>
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Bioestimulador de colágeno</li>
                 <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Skinbooster</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- Limpeza de Pele -->
-        <article class="spec-card" id="cardLimpeza">
-          <div class="spec-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3C12 3 6 10 6 15C6 18.3 8.7 21 12 21C15.3 21 18 18.3 18 15C18 10 12 3 12 3Z" stroke="#8A6E2F" stroke-width="1.6"/><path d="M9.5 15.2C9.5 16.7 10.6 18 12 18" stroke="#8A6E2F" stroke-width="1.4" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Limpeza de Pele</h3>
-          <p class="spec-desc">Cravos, oleosidade e pele opaca que voltam toda semana, mesmo com o skincare mais caro? A limpeza de pele profissional remove o que o cuidado em casa não alcança.</p>
-
-          <button class="spec-toggle" data-target="listLimpeza" aria-expanded="false">
-            Ver tratamentos
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="#8A6E2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-
-          <div class="spec-list" id="listLimpeza">
-            <div class="spec-list-inner">
-              <ul>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Higienização e diagnóstico da pele</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Extração de cravos e comedões</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Esfoliação personalizada</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Máscara calmante pós-limpeza</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ultrassom micro e macrofocado</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Harmonização facial personalizada</li>
               </ul>
             </div>
           </div>
@@ -865,7 +989,7 @@
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="#8A6E2F" stroke-width="1.4"/><path d="M4 9.5H20" stroke="#8A6E2F" stroke-width="1.4"/><path d="M8 13.2L10 15.2L16 10" stroke="#8A6E2F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>Gerenciamento de Pele</h3>
-          <p class="spec-desc">Se você já tentou dezenas de produtos sem saber o que realmente funciona, o problema não é falta de produto — é falta de um plano com acompanhamento contínuo.</p>
+          <p class="spec-desc">Protocolos personalizados para saúde, qualidade e rejuvenescimento da pele.</p>
 
           <button class="spec-toggle" data-target="listGerenciamento" aria-expanded="false">
             Ver tratamentos
@@ -875,10 +999,14 @@
           <div class="spec-list" id="listGerenciamento">
             <div class="spec-list-inner">
               <ul>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Avaliação e diagnóstico de pele</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Plano de skincare personalizado</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Acompanhamento periódico dos resultados</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ajustes de protocolo conforme a resposta da pele</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Limpeza de pele</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Peelings</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Microagulhamento</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Enzimas</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Gerenciamento de melasma e hipercromias</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Protocolo para poros e textura da pele</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Revitalização e hidratação facial</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Protocolos de rejuvenescimento</li>
               </ul>
             </div>
           </div>
@@ -922,6 +1050,11 @@
           <h3>Tricologia</h3>
           <p class="spec-desc">Queda de cabelo, fios finos e couro cabeludo sensível têm causa — e ela pode ser tratada. Diagnóstico clínico e protocolos que cuidam da raiz do problema, não só do sintoma.</p>
 
+          <div class="partner-badge">
+            <img src="assets/images/stop-calvicie.jpeg" alt="Stop Calvície — unidade parceira especializada em prevenção e tratamento da calvície" loading="lazy">
+            <span>Unidade parceira <strong>Stop Calvície®</strong>, especializada em prevenção e tratamento da calvície masculina e feminina.</span>
+          </div>
+
           <button class="spec-toggle" data-target="listTricologia" aria-expanded="false">
             Ver tratamentos
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="#8A6E2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -944,13 +1077,36 @@
     <!-- CORPO -->
     <div class="category-group" data-cat="corpo">
       <div class="spec-grid">
+        <!-- Massagem Terapêutica -->
+        <article class="spec-card" id="cardMassagem">
+          <div class="spec-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 14C4 14 6 10 9 10C12 10 12 13 15 13C18 13 20 10 20 10" stroke="#5B3A22" stroke-width="1.6" stroke-linecap="round"/><circle cx="7" cy="6.5" r="2" stroke="#5B3A22" stroke-width="1.5"/><path d="M5 20C5 17 7 15.5 9.5 15.5C12 15.5 12.5 17.5 15 17.5C17.5 17.5 19 15.5 19 15.5" stroke="#5B3A22" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Massagem Terapêutica</h3>
+          <p class="spec-desc">Para quem sente dores, tensões e desconfortos musculares.</p>
+
+          <button class="spec-toggle" data-target="listMassagem" aria-expanded="false">
+            Ver tratamentos
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="#8A6E2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="spec-list" id="listMassagem">
+            <div class="spec-list-inner">
+              <ul>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Abordagem personalizada para aliviar tensões e reduzir desconfortos</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Promove sensação de bem-estar e mobilidade</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
         <!-- Drenagem Linfática -->
         <article class="spec-card" id="cardDrenagem">
           <div class="spec-icon">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3C12 3 6 9.5 6 14.5C6 18.1 8.7 21 12 21C15.3 21 18 18.1 18 14.5C18 9.5 12 3 12 3Z" stroke="#5B3A22" stroke-width="1.6"/><path d="M9.5 15C9.5 16.4 10.6 17.5 12 17.5" stroke="#5B3A22" stroke-width="1.4" stroke-linecap="round"/></svg>
           </div>
           <h3>Drenagem Linfática</h3>
-          <p class="spec-desc">Retenção de líquido, sensação de peso e inchaço corporal? A drenagem linfática estimula a circulação e devolve a leveza que o seu corpo precisa.</p>
+          <p class="spec-desc">Leveza, conforto e cuidado com o seu corpo.</p>
 
           <button class="spec-toggle" data-target="listDrenagem" aria-expanded="false">
             Ver tratamentos
@@ -960,7 +1116,32 @@
           <div class="spec-list" id="listDrenagem">
             <div class="spec-list-inner">
               <ul>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Drenagem linfática</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Sensação de inchaço, pernas pesadas ou retenção de líquidos</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Indicada também no pós-operatório</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Técnica manual que favorece o fluxo linfático, conforme avaliação e indicação</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Enzimas Corporais -->
+        <article class="spec-card" id="cardEnzimas">
+          <div class="spec-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#5B3A22" stroke-width="1.6"/><path d="M12 8V12L14.5 14.5" stroke="#5B3A22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Enzimas Corporais</h3>
+          <p class="spec-desc">Protocolos personalizados para as suas necessidades.</p>
+
+          <button class="spec-toggle" data-target="listEnzimas" aria-expanded="false">
+            Ver tratamentos
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="#8A6E2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <div class="spec-list" id="listEnzimas">
+            <div class="spec-list-inner">
+              <ul>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Tratamento corporal com enzimas</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Avaliação individualizada, sem fórmula padrão</li>
               </ul>
             </div>
           </div>
@@ -983,7 +1164,7 @@
       <strong>Agende sua avaliação</strong>
       <span>Fale agora com a Dra. Andressa e descubra o cuidado ideal para você.</span>
     </div>
-    <a href="https://wa.me/5519991493433?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary">Agende sua avaliação</a>
+    <a href="https://wa.me/5519989221717?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary">Agende sua avaliação</a>
   </div>
 </div>
 
@@ -996,9 +1177,6 @@
           <img src="assets/images/sobre-dra-andressa.jpeg" alt="Dra. Andressa M. Artur em pé no consultório, ao lado da tela com a marca Dr. Andressa Estética Avançada" loading="lazy">
         </div>
       </div>
-      <div class="seal-badge">
-        <img src="assets/images/logo-andressa.jpeg" alt="Selo Dr. Andressa Estética Avançada — Fisioterapia e Estética" loading="lazy">
-      </div>
     </div>
 
     <div class="about-list">
@@ -1007,15 +1185,19 @@
       <p class="about-lead">Depois de entender a causa real do que te incomoda, o próximo passo é saber quem vai cuidar de você.</p>
       <div class="about-item">
         <div class="check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div><strong>Formação e especialização</strong><span>Fisioterapeuta especializada em estética avançada, dermatofuncional e tricologia.</span></div>
+        <div><strong>21 anos de formação</strong><span>Formada há 21 anos, iniciou sua trajetória na ortopedia, traumatologia e neurologia, áreas em que ainda atua com foco total na reabilitação das pessoas. Especialização em Ortopedia e Traumatologia pela Unicamp.</span></div>
       </div>
       <div class="about-item">
         <div class="check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div><strong>Protocolos individualizados</strong><span>Cada plano de tratamento é desenhado para a sua necessidade.</span></div>
+        <div><strong>Reabilitação e Terapias Integrativas</strong><span>Cursos de Pilates, massagem terapêutica, drenagem linfática, pós-operatório cirúrgico estético, reabilitação geral, equoterapia, ventosaterapia, shiatsu e auriculoterapia. Atua também com neurologia e fisioterapia integrativa, cuidando do paciente como um todo.</span></div>
       </div>
       <div class="about-item">
         <div class="check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div><strong>Ambiente acolhedor</strong><span>Consultório preparado para o seu conforto do início ao fim.</span></div>
+        <div><strong>Estética Avançada e a Reabilitação da Beleza</strong><span>Há 3 anos, com a liberação dos injetáveis para a fisioterapia, se apaixonou pela área. Fez cursos de botox, preenchimento, skinbooster, HOF avançado e gerenciamento de pele, entendendo que também era preciso reabilitar a beleza e a autoestima.</span></div>
+      </div>
+      <div class="about-item">
+        <div class="check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><strong>Tricologia e Novidades</strong><span>Especialização em tricologia e dermato funcional, sentindo a dor das pessoas com queda de cabelo e queixas de pele, entrando nessa área para ajudar de forma humana e clínica. Em breve, novidades nessa área.</span></div>
       </div>
     </div>
   </div>
@@ -1034,11 +1216,11 @@
       <div class="contact-card">
         <div class="contact-row">
           <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2 22L7.2 20.7C8.6 21.5 10.3 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2Z" stroke="#D4AF37" stroke-width="1.4"/></svg></div>
-          <div><strong>WhatsApp / Telefone</strong><a class="value" href="https://wa.me/5519991493433" target="_blank" rel="noopener">(19) 99149-3433</a></div>
+          <div><strong>WhatsApp / Telefone</strong><a class="value" href="https://wa.me/5519989221717" target="_blank" rel="noopener">(19) 98922-1717</a></div>
         </div>
         <div class="contact-row">
           <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21C16 17 19 13.4 19 9.5C19 5.9 15.9 3 12 3C8.1 3 5 5.9 5 9.5C5 13.4 8 17 12 21Z" stroke="#D4AF37" stroke-width="1.4"/><circle cx="12" cy="9.5" r="2.4" stroke="#D4AF37" stroke-width="1.4"/></svg></div>
-          <div><strong>Endereço</strong><span>CEP 13497-650</span></div>
+          <div><strong>Endereço</strong><span>Avenida Antônio Ometto, 606 — Vila Cláudia, sala 6, consultório 2 — CEP 13480-470</span></div>
         </div>
         <div class="contact-row">
           <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8V13L15 15" stroke="#D4AF37" stroke-width="1.4" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#D4AF37" stroke-width="1.4"/></svg></div>
@@ -1075,10 +1257,42 @@
 </section>
 
 <!-- ================= WHATSAPP FLUTUANTE ================= -->
-<a class="wa-float" id="waFloat" href="https://wa.me/5519991493433?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="wa-float" id="waFloat" href="https://wa.me/5519989221717?text=Ol%C3%A1%2C%20Dra.%20Andressa%21%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <span class="wa-tooltip">Fale com a gente</span>
   <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2 22L7.2 20.7C8.6 21.5 10.3 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2Z" stroke="white" stroke-width="1.5"/><path d="M8.5 8.7C8.7 8.1 9.3 7.7 9.9 7.8C10.2 7.8 10.4 8 10.5 8.3L11.1 9.9C11.2 10.2 11.1 10.5 10.9 10.7L10.3 11.3C10.6 12.1 11.9 13.4 12.7 13.7L13.3 13.1C13.5 12.9 13.8 12.8 14.1 12.9L15.7 13.5C16 13.6 16.2 13.8 16.2 14.1C16.3 14.7 15.9 15.3 15.3 15.5C13 16.3 9.7 13 8.9 10.7C8.7 10.2 8.6 9.7 8.5 9.2C8.5 9 8.5 8.9 8.5 8.7Z" fill="white"/></svg>
 </a>
+
+<!-- ================= ELISA: ASSISTENTE VIRTUAL ================= -->
+<button class="elisa-float" id="elisaToggle" aria-label="Falar com a Elisa, assistente virtual" aria-expanded="false" aria-controls="elisaPanel">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12C4 7.6 7.6 4 12 4C16.4 4 20 7.6 20 12C20 16.4 16.4 20 12 20H6L4 22V12Z" stroke="#3B2E0F" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="12" r="1.1" fill="#3B2E0F"/><circle cx="12" cy="12" r="1.1" fill="#3B2E0F"/><circle cx="15" cy="12" r="1.1" fill="#3B2E0F"/></svg>
+</button>
+
+<div class="elisa-panel" id="elisaPanel" role="dialog" aria-label="Chat com a Elisa">
+  <div class="elisa-head">
+    <div class="avatar">E</div>
+    <div>
+      <strong>Elisa</strong>
+      <span>Assistente virtual · Dr. Andressa Estética Avançada</span>
+    </div>
+    <button class="elisa-close" id="elisaClose" aria-label="Fechar chat">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="elisa-body" id="elisaBody"></div>
+  <div class="elisa-quick" id="elisaQuick">
+    <button class="elisa-chip" data-q="tratamentos">Tratamentos</button>
+    <button class="elisa-chip" data-q="endereco">Endereço</button>
+    <button class="elisa-chip" data-q="whatsapp">WhatsApp</button>
+    <button class="elisa-chip" data-q="horario">Horário de atendimento</button>
+  </div>
+  <form class="elisa-input-row" id="elisaForm">
+    <input type="text" id="elisaInput" placeholder="Digite sua pergunta..." autocomplete="off">
+    <button type="submit" aria-label="Enviar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L20 4L13 20L11 13L4 12Z" fill="#3B2E0F"/></svg>
+    </button>
+  </form>
+  <div class="elisa-disclaimer">Elisa responde com base nas informações deste site.</div>
+</div>
 
 <script>
 (function(){
@@ -1124,7 +1338,7 @@
   });
 
   /* Formulário de contato -> WhatsApp */
-  var WA_NUMBER = '5519991493433';
+  var WA_NUMBER = '5519989221717';
   var form = document.getElementById('contactForm');
   form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -1138,6 +1352,97 @@
     if(msg){ text += " Mensagem: " + msg; }
 
     window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  });
+
+  /* ---------- Elisa: assistente virtual ---------- */
+  var elisaToggle = document.getElementById('elisaToggle');
+  var elisaPanel = document.getElementById('elisaPanel');
+  var elisaClose = document.getElementById('elisaClose');
+  var elisaBody = document.getElementById('elisaBody');
+  var elisaForm = document.getElementById('elisaForm');
+  var elisaInput = document.getElementById('elisaInput');
+  var elisaQuick = document.getElementById('elisaQuick');
+  var elisaStarted = false;
+
+  var ELISA_ANSWERS = {
+    saudacao: "Olá! Eu sou a Elisa, assistente virtual da Dr. Andressa Estética Avançada. Posso te contar sobre tratamentos, endereço, horários e WhatsApp. Como posso ajudar?",
+    tratamentos: "Trabalhamos com três frentes de cuidado: Facial (Harmonização Facial e Gerenciamento de Pele), Cabelos (Tricologia) e Corpo (Massagem Terapêutica, Drenagem Linfática e Enzimas Corporais). Quer saber mais sobre algum desses?",
+    facial: "Na área facial oferecemos Harmonização Facial (toxina botulínica, bioestimulador de colágeno, skinbooster, ultrassom micro e macrofocado) e Gerenciamento de Pele (limpeza de pele, peelings, microagulhamento, enzimas, melasma, textura da pele, revitalização e protocolos de rejuvenescimento).",
+    cabelo: "Cuidamos da saúde do couro cabeludo com Tricologia especializada: diagnóstico tricológico completo, microagulhamento capilar, drenagem linfática do couro cabeludo e LED terapia capilar. Também somos unidade parceira Stop Calvície, especializada em prevenção e tratamento da calvície masculina e feminina.",
+    corpo: "No cuidado corporal oferecemos Massagem Terapêutica (para dores e tensões musculares), Drenagem Linfática (leveza, conforto e cuidado com o corpo) e Enzimas Corporais — sempre com avaliação individualizada, conforme a sua necessidade.",
+    endereco: "Estamos na Avenida Antônio Ometto, 606, Vila Cláudia, sala 6, consultório 2, Limeira/SP — CEP 13480-470.",
+    whatsapp: "Você pode falar direto com a gente pelo WhatsApp (19) 98922-1717.",
+    horario: "Atendemos de segunda a sexta-feira, sempre com horário marcado.",
+    avaliacao: "Você pode agendar sua avaliação diretamente pelo WhatsApp (19) 98922-1717.",
+    sobre: "A Dra. Andressa é fisioterapeuta há 21 anos, com especializações em Ortopedia e Traumatologia (Unicamp), Estética Avançada, Reabilitação e Tricologia — sempre com um olhar clínico e humano para cada paciente.",
+    fallback: "Ainda não tenho essa informação por aqui, mas você pode falar direto com a Dra. Andressa pelo WhatsApp (19) 98922-1717 que ela te ajuda certinho."
+  };
+
+  var ELISA_RULES = [
+    { keys: ['facial','botox','harmoniza','skinbooster','peeling','melasma','pele'], answer: 'facial' },
+    { keys: ['cabelo','capilar','calvicie','calvície','queda','tricolog'], answer: 'cabelo' },
+    { keys: ['corpo','drenagem','massagem','enzima','inchaco','inchaço','corporal'], answer: 'corpo' },
+    { keys: ['tratamento','servico','serviço','oferece'], answer: 'tratamentos' },
+    { keys: ['endereco','endereço','onde','local','fica','rua','avenida'], answer: 'endereco' },
+    { keys: ['whatsapp','telefone','contato','numero','número','zap'], answer: 'whatsapp' },
+    { keys: ['horario','horário','funciona','atende','aberto'], answer: 'horario' },
+    { keys: ['agend','marcar','avalia'], answer: 'avaliacao' },
+    { keys: ['quem','doutora','andressa','especialista','formacao','formação'], answer: 'sobre' },
+    { keys: ['oi','ola','olá','bom dia','boa tarde','boa noite'], answer: 'saudacao' }
+  ];
+
+  function elisaMatch(text){
+    var t = text.toLowerCase();
+    for (var i=0;i<ELISA_RULES.length;i++){
+      var rule = ELISA_RULES[i];
+      for (var j=0;j<rule.keys.length;j++){
+        if (t.indexOf(rule.keys[j]) !== -1) { return ELISA_ANSWERS[rule.answer]; }
+      }
+    }
+    return ELISA_ANSWERS.fallback;
+  }
+
+  function elisaAddMessage(text, who){
+    var msg = document.createElement('div');
+    msg.className = 'elisa-msg ' + who;
+    msg.textContent = text;
+    elisaBody.appendChild(msg);
+    elisaBody.scrollTop = elisaBody.scrollHeight;
+  }
+
+  function elisaOpen(){
+    elisaPanel.classList.add('open');
+    elisaToggle.setAttribute('aria-expanded','true');
+    if(!elisaStarted){
+      elisaStarted = true;
+      elisaAddMessage(ELISA_ANSWERS.saudacao, 'bot');
+    }
+  }
+  function elisaCloseFn(){
+    elisaPanel.classList.remove('open');
+    elisaToggle.setAttribute('aria-expanded','false');
+  }
+
+  elisaToggle.addEventListener('click', function(){
+    if(elisaPanel.classList.contains('open')){ elisaCloseFn(); } else { elisaOpen(); }
+  });
+  elisaClose.addEventListener('click', elisaCloseFn);
+
+  elisaQuick.querySelectorAll('.elisa-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var key = chip.getAttribute('data-q');
+      elisaAddMessage(chip.textContent, 'user');
+      setTimeout(function(){ elisaAddMessage(ELISA_ANSWERS[key] || ELISA_ANSWERS.fallback, 'bot'); }, 260);
+    });
+  });
+
+  elisaForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var text = elisaInput.value.trim();
+    if(!text) return;
+    elisaAddMessage(text, 'user');
+    elisaInput.value = '';
+    setTimeout(function(){ elisaAddMessage(elisaMatch(text), 'bot'); }, 320);
   });
 
 })();
